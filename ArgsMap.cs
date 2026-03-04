@@ -25,8 +25,8 @@ public class ArgsMap : IArgsMap
     {
         flattened_args = string.Join(' ', args);
         // flattened_args.Dump("args");
-        if (debug)
-            Console.WriteLine("flattened args: " + flattened_args);
+        // if (debug)
+        //     Console.WriteLine("flattened args: " + flattened_args);
 
         Arguments =
             flattened_args.Extract<Argument>(ShargsPattern.Cli.CompiledRegex);
